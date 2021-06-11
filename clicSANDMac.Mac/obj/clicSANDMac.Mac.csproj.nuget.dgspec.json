@@ -1,0 +1,123 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.Mac.csproj": {}
+  },
+  "projects": {
+    "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.Mac.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.Mac.csproj",
+        "projectName": "clicSANDMac.Mac",
+        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.Mac.csproj",
+        "packagesPath": "/Users/nicki/.nuget/packages/",
+        "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nicki/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj": {
+                "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Eto.Platform.Mac64": {
+              "target": "Package",
+              "version": "[2.5.11, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "osx-x64": {
+          "#import": []
+        }
+      }
+    },
+    "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj",
+        "projectName": "clicSANDMac",
+        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj",
+        "packagesPath": "/Users/nicki/.nuget/packages/",
+        "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nicki/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Eto.Forms": {
+              "target": "Package",
+              "version": "[2.5.11, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

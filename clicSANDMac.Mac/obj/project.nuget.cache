@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "Mg2L7ey7LuRjsCq/nRo2PxUUkZA/q/haWYOHfWf5x+p6qY4j6pgNpQhWl9qmPkRLSB2nOZMxQs98PFJTSv1B/w==",
+  "success": true,
+  "projectFilePath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.Mac.csproj",
+  "expectedPackageFiles": [
+    "/Users/nicki/.nuget/packages/eto.forms/2.5.11/eto.forms.2.5.11.nupkg.sha512",
+    "/Users/nicki/.nuget/packages/eto.platform.mac64/2.5.11/eto.platform.mac64.2.5.11.nupkg.sha512",
+    "/Users/nicki/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/Users/nicki/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "/Users/nicki/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/nicki/.nuget/packages/system.security.permissions/5.0.0/system.security.permissions.5.0.0.nupkg.sha512",
+    "/Users/nicki/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
