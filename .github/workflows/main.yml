@@ -63,10 +63,10 @@ jobs:
       with:
         name: published_app
         path: |
-          clicSANDMac/bin/Debug/net48
-          !clicSANDMac/bin/Debug/net48/*.dll
-          !clicSANDMac/bin/Debug/net48/*.exe
-          !clicSANDMac/bin/Debug/net48/*.pdb
-          !clicSANDMac/bin/Debug/net48/*.config
-          !clicSANDMac/bin/Debug/net48/Templates
+          bin/Debug/net48
+          !bin/Debug/net48/*.dll
+          !bin/Debug/net48/*.exe
+          !bin/Debug/net48/*.pdb
+          !bin/Debug/net48/*.config
+          !bin/Debug/net48/Templates
           
