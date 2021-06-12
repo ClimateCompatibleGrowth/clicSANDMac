@@ -1,5 +1,6 @@
 ﻿using System;
 using Eto.Forms;
+using clicSANDLib;
 
 namespace clicSANDMac.Wpf
 {

@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Configuration;
 
-namespace clicSANDMac
+namespace clicSANDLib
 {
     public partial class FormModelRunner : Form
     {

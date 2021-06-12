@@ -1,7 +1,8 @@
 ﻿using System;
 using Eto.Forms;
+using clicSANDLib;
 
-namespace clicSANDMac.Mac
+namespace clicSANDMac
 {
     class Program
     {

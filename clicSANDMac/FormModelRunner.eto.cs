@@ -1,7 +1,7 @@
 ﻿using Eto.Forms;
 using Eto.Drawing;
 
-namespace clicSANDMac
+namespace clicSANDLib
 {
     partial class FormModelRunner : Form
     {

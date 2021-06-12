@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bHPTUBaE62cZg/1wjKFwV4akaUpU2Kn2N5TtMOMIKN6+sv2xKqMoN9iAoYMpl9JyYQCog/Z/oYDhTTndFr6EVA==",
+  "dgSpecHash": "+RjEo6Xs1ZaFz0xLul7Ig1c87KLGnYgVRJIaXR8NNZJsi3zOtsAr5YkpU3tesvvNT88CO7WgoGDPmx13JXcT3A==",
   "success": true,
   "projectFilePath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Gtk/clicSANDMac.Gtk.csproj",
   "expectedPackageFiles": [
@@ -13,11 +13,7 @@
     "/Users/nicki/.nuget/packages/glibsharp/3.24.24.34/glibsharp.3.24.24.34.nupkg.sha512",
     "/Users/nicki/.nuget/packages/gtksharp/3.24.24.34/gtksharp.3.24.24.34.nupkg.sha512",
     "/Users/nicki/.nuget/packages/pangosharp/3.24.24.34/pangosharp.3.24.24.34.nupkg.sha512",
-    "/Users/nicki/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
-    "/Users/nicki/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
-    "/Users/nicki/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
-    "/Users/nicki/.nuget/packages/system.security.permissions/5.0.0/system.security.permissions.5.0.0.nupkg.sha512",
-    "/Users/nicki/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
+    "/Users/nicki/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

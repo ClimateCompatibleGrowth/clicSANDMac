@@ -5,12 +5,19 @@
     <TargetFramework>net48</TargetFramework>
 
     <RuntimeIdentifiers>osx-x64</RuntimeIdentifiers>
+    <AssemblyName>clicSANDMac</AssemblyName>
   </PropertyGroup>
 	
-  <ItemGroup>
-    <ProjectReference Include="..\clicSANDMac\clicSANDMac.csproj" />
-  </ItemGroup>
-	
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>echo $(TargetDir)</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Eto.Platform.Mac64" Version="2.5.11" />
   </ItemGroup>
@@ -28,5 +35,8 @@
     <None Update="Templates\ResultsTemplate.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clicSANDMac\clicSANDLib.csproj" />
   </ItemGroup>
 </Project>

@@ -26,8 +26,8 @@
           "net48": {
             "targetAlias": "net48-windows",
             "projectReferences": {
-              "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj": {
-                "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj"
+              "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj": {
+                "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj"
               }
             }
           }
@@ -51,12 +51,12 @@
         }
       }
     },
-    "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj": {
+    "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj",
-        "projectName": "clicSANDMac",
-        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj",
+        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj",
+        "projectName": "clicSANDLib",
+        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj",
         "packagesPath": "/Users/nicki/.nuget/packages/",
         "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/obj/",
         "projectStyle": "PackageReference",

@@ -132,7 +132,7 @@
           }
         }
       },
-      "clicSANDMac/1.0.0": {
+      "clicSANDLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -140,10 +140,10 @@
           "System.Configuration.ConfigurationManager": "5.0.0"
         },
         "compile": {
-          "bin/placeholder/clicSANDMac.dll": {}
+          "bin/placeholder/clicSANDLib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/clicSANDMac.dll": {}
+          "bin/placeholder/clicSANDLib.dll": {}
         }
       }
     },
@@ -266,7 +266,7 @@
           "lib/net461/System.Security.Principal.Windows.dll": {}
         }
       },
-      "clicSANDMac/1.0.0": {
+      "clicSANDLib/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -274,10 +274,10 @@
           "System.Configuration.ConfigurationManager": "5.0.0"
         },
         "compile": {
-          "bin/placeholder/clicSANDMac.dll": {}
+          "bin/placeholder/clicSANDLib.dll": {}
         },
         "runtime": {
-          "bin/placeholder/clicSANDMac.dll": {}
+          "bin/placeholder/clicSANDLib.dll": {}
         }
       }
     }
@@ -584,16 +584,16 @@
         "version.txt"
       ]
     },
-    "clicSANDMac/1.0.0": {
+    "clicSANDLib/1.0.0": {
       "type": "project",
-      "path": "../clicSANDMac/clicSANDMac.csproj",
-      "msbuildProject": "../clicSANDMac/clicSANDMac.csproj"
+      "path": "../clicSANDMac/clicSANDLib.csproj",
+      "msbuildProject": "../clicSANDMac/clicSANDLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.8": [
       "Eto.Platform.Mac64 >= 2.5.11",
-      "clicSANDMac >= 1.0.0"
+      "clicSANDLib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -602,9 +602,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.Mac.csproj",
-      "projectName": "clicSANDMac.Mac",
-      "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.Mac.csproj",
+      "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.csproj",
+      "projectName": "clicSANDMac",
+      "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/clicSANDMac.csproj",
       "packagesPath": "/Users/nicki/.nuget/packages/",
       "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Mac/obj/",
       "projectStyle": "PackageReference",
@@ -621,8 +621,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj": {
-              "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDMac.csproj"
+            "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj": {
+              "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj"
             }
           }
         }
