@@ -9,6 +9,18 @@
   </PropertyGroup>
 	
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>AfterBuild</type>
+          <command>mkdir -p $(SolutionDir)/Runtime</command>
+        </Command>
+        <Command>
+          <type>AfterBuild</type>
+          <command>cp -r $(TargetDir)/clicSANDMac.app $(SolutionDir)/Runtime/clicSANDMac.app</command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Eto.Platform.Mac64" Version="2.5.11" />
