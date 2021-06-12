@@ -63,10 +63,10 @@ jobs:
       with:
         name: published_app
         path: |
-          bin/Debug/net48
-          !bin/Debug/net48/*.dll
-          !bin/Debug/net48/*.exe
-          !bin/Debug/net48/*.pdb
-          !bin/Debug/net48/*.config
-          !bin/Debug/net48/Templates
+          bin/Release/net48
+          !bin/Release/net48/*.dll
+          !bin/Release/net48/*.exe
+          !bin/Release/net48/*.pdb
+          !bin/Release/net48/*.config
+          !bin/Release/net48/Templates
           
