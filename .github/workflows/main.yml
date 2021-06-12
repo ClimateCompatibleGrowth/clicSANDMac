@@ -62,4 +62,11 @@ jobs:
       uses: actions/upload-artifact@v1.0.0
       with:
         name: published_app
-        path: Runtime
+        path: |
+          clicSANDMac/clicSANDMac/bin/Debug/net48
+          !clicSANDMac/clicSANDMac/bin/Debug/net48/*.dll
+          !clicSANDMac/clicSANDMac/bin/Debug/net48/*.exe
+          !clicSANDMac/clicSANDMac/bin/Debug/net48/*.pdb
+          !clicSANDMac/clicSANDMac/bin/Debug/net48/*.config
+          !clicSANDMac/clicSANDMac/bin/Debug/net48/Templates
+          
