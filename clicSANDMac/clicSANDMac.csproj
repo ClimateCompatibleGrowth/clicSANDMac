@@ -13,7 +13,7 @@
       <CustomCommands>
         <Command>
           <type>AfterBuild</type>
-          <command>echo $(TargetDir)</command>
+          <command>echo </command>
         </Command>
       </CustomCommands>
     </CustomCommands>
@@ -37,6 +37,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\clicSANDMac\clicSANDLib.csproj" />
+    <ProjectReference Include="..\clicSANDLib\clicSANDLib.csproj" />
   </ItemGroup>
 </Project>

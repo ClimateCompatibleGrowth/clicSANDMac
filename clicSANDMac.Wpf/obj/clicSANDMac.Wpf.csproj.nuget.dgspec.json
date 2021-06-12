@@ -4,61 +4,14 @@
     "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj": {}
   },
   "projects": {
-    "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj": {
+    "/Users/nicki/dev/clicSANDMac/clicSANDLib/clicSANDLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
-        "projectName": "clicSANDMac.Wpf",
-        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
-        "packagesPath": "/Users/nicki/.nuget/packages/",
-        "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/nicki/.config/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net48-windows"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net48": {
-            "targetAlias": "net48-windows",
-            "projectReferences": {
-              "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj": {
-                "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net48": {
-          "targetAlias": "net48-windows",
-          "dependencies": {
-            "Eto.Platform.Wpf": {
-              "target": "Package",
-              "version": "[2.5.11, )"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj",
+        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDLib/clicSANDLib.csproj",
         "projectName": "clicSANDLib",
-        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj",
+        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDLib/clicSANDLib.csproj",
         "packagesPath": "/Users/nicki/.nuget/packages/",
-        "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/obj/",
+        "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDLib/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/nicki/.config/NuGet/NuGet.Config"
@@ -110,6 +63,53 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
+        "projectName": "clicSANDMac.Wpf",
+        "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
+        "packagesPath": "/Users/nicki/.nuget/packages/",
+        "outputPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac.Wpf/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/nicki/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net48-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48-windows",
+            "projectReferences": {
+              "/Users/nicki/dev/clicSANDMac/clicSANDLib/clicSANDLib.csproj": {
+                "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDLib/clicSANDLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48-windows",
+          "dependencies": {
+            "Eto.Platform.Wpf": {
+              "target": "Package",
+              "version": "[2.5.11, )"
+            }
+          },
           "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.203/RuntimeIdentifierGraph.json"
         }
       }

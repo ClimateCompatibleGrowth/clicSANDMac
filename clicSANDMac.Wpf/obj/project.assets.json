@@ -553,8 +553,8 @@
     },
     "clicSANDLib/1.0.0": {
       "type": "project",
-      "path": "../clicSANDMac/clicSANDLib.csproj",
-      "msbuildProject": "../clicSANDMac/clicSANDLib.csproj"
+      "path": "../clicSANDLib/clicSANDLib.csproj",
+      "msbuildProject": "../clicSANDLib/clicSANDLib.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -588,8 +588,8 @@
         "net48": {
           "targetAlias": "net48-windows",
           "projectReferences": {
-            "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj": {
-              "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDMac/clicSANDLib.csproj"
+            "/Users/nicki/dev/clicSANDMac/clicSANDLib/clicSANDLib.csproj": {
+              "projectPath": "/Users/nicki/dev/clicSANDMac/clicSANDLib/clicSANDLib.csproj"
             }
           }
         }
