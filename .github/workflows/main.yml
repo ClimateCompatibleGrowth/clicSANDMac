@@ -59,7 +59,7 @@ jobs:
 #    - name: Nuget Push
 #      run: dotnet nuget push "bin/Release/ModelRunner.1.0.0.nupkg" --source "github"
     - name: Upload Artifact
-      uses: actions/upload-artifact@v1.0.0
+      uses: actions/upload-artifact@v2
       with:
         name: published_app
         path: |
