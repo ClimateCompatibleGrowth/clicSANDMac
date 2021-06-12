@@ -8,7 +8,7 @@
     <AssemblyName>clicSANDMac</AssemblyName>
   </PropertyGroup>
 	
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <CustomCommands>
       <CustomCommands>
         <Command>
@@ -22,7 +22,7 @@
       </CustomCommands>
     </CustomCommands>
   </PropertyGroup>
-  <ItemGroup>
+    <ItemGroup>
     <PackageReference Include="Eto.Platform.Mac64" Version="2.5.11" />
   </ItemGroup>
 	
