@@ -63,10 +63,4 @@ jobs:
       with:
         name: published_app
         path: |
-          clicSANDMac/bin/Release/net48
-          !clicSANDMac/bin/Release/net48/*.dll
-          !clicSANDMac/bin/Release/net48/*.exe
-          !clicSANDMac/bin/Release/net48/*.pdb
-          !clicSANDMac/bin/Release/net48/*.config
-          !clicSANDMac/bin/Release/net48/Templates
-          
+          clicSANDMac/bin/Release/net48          
