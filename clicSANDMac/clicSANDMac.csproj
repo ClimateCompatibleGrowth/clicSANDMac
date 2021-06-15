@@ -10,9 +10,7 @@
 	
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
   </PropertyGroup>
-  <PropertyGroup>
-    <PostBuildEvent>mkdir -p $(SolutionDir)Runtime ; cp -r $(SolutionDir)clicSANDMac/bin/Release/net48/clicSANDMac.app/ $(SolutionDir)Runtime/clicSANDMac.app/</PostBuildEvent>
-  </PropertyGroup>
+
    <ItemGroup>
     <PackageReference Include="Eto.Platform.Mac64" Version="2.5.11" />
   </ItemGroup>
