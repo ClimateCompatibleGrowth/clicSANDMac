@@ -9,18 +9,6 @@
   </PropertyGroup>
 	
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <CustomCommands>
-      <CustomCommands>
-        <Command>
-          <type>AfterBuild</type>
-          <command>mkdir -p $(SolutionDir)/Runtime</command>
-        </Command>
-        <Command>
-          <type>AfterBuild</type>
-          <command>cp -r $(TargetDir)/clicSANDMac.app $(SolutionDir)/Runtime/clicSANDMac.app</command>
-        </Command>
-      </CustomCommands>
-    </CustomCommands>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>mkdir -p $(SolutionDir)Runtime ; cp -r $(SolutionDir)clicSANDMac/bin/Release/net48/clicSANDMac.app/ $(SolutionDir)Runtime/clicSANDMac.app/</PostBuildEvent>
