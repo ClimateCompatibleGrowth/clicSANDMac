@@ -1,0 +1,11 @@
+﻿CBC:
+download from https://ampl.com/dl/open/cbc/cbc-osx.zip
+
+GLPK:
+download from https://ftp.gnu.org/gnu/glpk/glpk-5.0.tar.gz
+extract
+change to extracted dir
+./configure
+make
+make install
+
