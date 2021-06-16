@@ -2,6 +2,7 @@
 
 ## Installation
 ### Install mono framework for Mac
+[Download here](https://www.mono-project.com/download/stable/)
 
 ### Install prerequisites cbc and glpsol
 Download and execute [install.sh](https://raw.githubusercontent.com/ClimateCompatibleGrowth/clicSANDMac/main/install.sh) to download and install coin-cbc and glpk. These are required to be installed before proceeding. The script needs curl and unzip to be installed, which should be installed by default. clicSANDMac currently expects these to be installed in /usr/local/bin
