@@ -1,4 +1,5 @@
-rm -R ~/dev/clicSANDMac/Runtime/clicSANDMac.app
-rm ~/dev/clicSANDMac/clicSANDMac.pkg
-cp -R ~/dev/clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDMac.app Runtime 
-pkgbuild --identifier clicSANDMac --install-location /Applications --root ~/dev/clicSANDMac/Runtime/ ~/dev/clicSANDMac/clicSANDMac.pkg
+mkdir -p Runtime
+rm -fR Runtime/clicSANDMac.app
+rm -f clicSANDMac.pkg
+cp -R clicSANDMac/bin/Debug/net48/clicSANDMac.app Runtime 
+pkgbuild --identifier clicSANDMac --install-location /Applications --root Runtime/ clicSANDMac.pkg
