@@ -11,6 +11,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clicSANDMac.Wpf", "clicSAND
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "clicSANDMac.Gtk", "clicSANDMac.Gtk\clicSANDMac.Gtk.csproj", "{8F4B5175-1699-4765-BB67-3B6440DADCD0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{65AE6CD9-C73E-4CD6-B2EB-FD9E599D5AEE}"
+	ProjectSection(SolutionItems) = preProject
+		Module1.vba = Module1.vba
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
