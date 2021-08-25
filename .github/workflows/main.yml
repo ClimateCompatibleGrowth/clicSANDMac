@@ -30,6 +30,10 @@ jobs:
     - name: Build and Publish Web App
       run: msbuild clicSANDMac.sln /p:Configuration=Debug
       
+    - name: Package the app
+      run: |
+        sh ./package
+      
 #    - name: Zip the release
 #      run: 7z a clicSAND.zip bin\Release
 #    - name: Create Release
@@ -63,4 +67,4 @@ jobs:
       with:
         name: published_app
         path: |
-          clicSANDMac/bin/Debug/net48          
+          clicSANDMac.pkg          
