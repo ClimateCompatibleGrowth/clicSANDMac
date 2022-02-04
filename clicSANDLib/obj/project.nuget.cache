@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hpUQmclmVauw1XplxIGx9zXG4MM/9TnRFJbY2NC6IQuh2aknxEtldsd6G0pdULu3rUhlRM5cuUYw9zzX29zdug==",
+  "dgSpecHash": "wgAotISTEg/YGpZBV8mwloqtoRDYOjnuT3J0PxaqnqwQ7KsVqxa2ucM8HvbneV/hZYWYyqEfejkn6/08MkqCuA==",
   "success": true,
-  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDLib/clicSANDLib.csproj",
+  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj",
   "expectedPackageFiles": [
     "/Users/alexanderkell/.nuget/packages/eto.forms/2.5.11/eto.forms.2.5.11.nupkg.sha512",
     "/Users/alexanderkell/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",

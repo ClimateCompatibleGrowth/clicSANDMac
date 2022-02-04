@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5bgYFU7rWCRaJwN1sPECsMtdKqaewFtaaZlQe6SZ79zjFYGo9dLXtERljbjz0C0iRst6ISyzxttYZJhsZbyiOw==",
+  "dgSpecHash": "zJk0eVqWfPwT42p2e/7hUSHyiA9Ta5oURycTGDGDB6sUWMMh57rd9oDikzvRQOctMojgtcloxIIeB2Q24hoNJg==",
   "success": true,
-  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
+  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
   "expectedPackageFiles": [
     "/Users/alexanderkell/.nuget/packages/eto.forms/2.5.11/eto.forms.2.5.11.nupkg.sha512",
     "/Users/alexanderkell/.nuget/packages/eto.platform.wpf/2.5.11/eto.platform.wpf.2.5.11.nupkg.sha512",
