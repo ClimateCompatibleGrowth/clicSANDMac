@@ -1,0 +1,29 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Data file TEST: /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt
+Model file: /Users/alexanderkell/Downloads/osemosys_2017_11_08.txt
+GLPSOL Output file: /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt.lp
+Results file: /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt.results.txt
+Log file: /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt20220204114718.log.txt
+------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Running /usr/local/bin/glpsol --check -m "/Users/alexanderkell/Downloads/osemosys_2017_11_08.txt" -d "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt" --wlp "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt.lp"
+------------------------------------------------------------------------------------------------------------------------------------------------------
+GLPSOL--GLPK LP/MIP Solver 5.0
+Parameter(s) specified in the command line:
+ --check -m /Users/alexanderkell/Downloads/osemosys_2017_11_08.txt -d /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt
+ --wlp /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt.lp
+Reading model section from /Users/alexanderkell/Downloads/osemosys_2017_11_08.txt...
+/Users/alexanderkell/Downloads/osemosys_2017_11_08.txt:744: warning: final NL missing before end of file
+744 lines were read
+Reading data section from /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt...
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt:57: ResultsPath not a parameter
+Context: ...T ; set FLEXIBLEDEMANDTYPE ; set STORAGE ; param ResultsPath
+MathProg model processing error
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Running /usr/local/bin/cbc "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt.lp" ratio 0.05 solve -solu "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt.results.txt"
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Welcome to the CBC MILP Solver 
+Version: 2.10.5 
+Build Date: Nov 24 2021 
+
+command line - /usr/local/bin/cbc /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/Templates/OSeMOSYS_code.txt.lp ratio 0.05 solve -solu /Users/alexanderkell/G

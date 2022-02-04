@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "KJcUnYibFN0NuLn0mEiTwFAE5FritLnoiP2B60AG4Qtyg/Pt9rrBkJ6gU1yxMI5uAPAWHWqFTWz6Ykv4cbcqPA==",
+  "success": true,
+  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/clicSANDMac.csproj",
+  "expectedPackageFiles": [
+    "/Users/alexanderkell/.nuget/packages/eto.forms/2.6.1/eto.forms.2.6.1.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/eto.platform.mac64/2.6.1/eto.platform.mac64.2.6.1.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.permissions/5.0.0/system.security.permissions.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

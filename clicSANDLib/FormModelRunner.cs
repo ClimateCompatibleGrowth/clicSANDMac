@@ -25,7 +25,7 @@ namespace clicSANDLib
             textBoxOutput.Text = "";
 
             textBoxOutput.Text += new string('-', 150) + "\r\n";
-            textBoxOutput.Text += "Data file TEST: " + dataFileName + "\r\n";
+            textBoxOutput.Text += "Data file: " + dataFileName + "\r\n";
             textBoxOutput.Text += "Model file: " + textBoxModel.Text + "\r\n";
             textBoxOutput.Text += "GLPSOL Output file: " + lpFileName + "\r\n";
             textBoxOutput.Text += "Results file: " + resultsFileName + "\r\n";
