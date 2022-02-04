@@ -25,10 +25,10 @@ namespace clicSANDLib
             textBoxOutput.Text = "";
 
             textBoxOutput.Text += new string('-', 150) + "\r\n";
-            textBoxOutput.Text += "Data file: " + dataFileName + "\r\n";
-            textBoxOutput.Text += "Model file: " + textBoxModel.Text+ "\r\n";
+            textBoxOutput.Text += "Data file TEST: " + dataFileName + "\r\n";
+            textBoxOutput.Text += "Model file: " + textBoxModel.Text + "\r\n";
             textBoxOutput.Text += "GLPSOL Output file: " + lpFileName + "\r\n";
-            textBoxOutput.Text += "Results file: " + resultsFileName+ "\r\n";
+            textBoxOutput.Text += "Results file: " + resultsFileName + "\r\n";
             textBoxOutput.Text += "Log file: " + logFileName + "\r\n";
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
@@ -117,8 +117,8 @@ namespace clicSANDLib
 
                 compiler.OutputDataReceived += new DataReceivedEventHandler((sender, e) =>
                 {
-                // Prepend line numbers to each line of the output.
-                if (!String.IsNullOrEmpty(e.Data))
+                    // Prepend line numbers to each line of the output.
+                    if (!String.IsNullOrEmpty(e.Data))
                     {
                         textBoxOutput.Text += e.Data;
                     }
@@ -200,7 +200,7 @@ namespace clicSANDLib
 
             var location = new Uri(System.Reflection.Assembly.GetEntryAssembly().GetName().CodeBase);
             DirectoryInfo runningFolder = new FileInfo(location.AbsolutePath).Directory;
-            
+
             if (result.Equals(DialogResult.Ok))
             {
                 try
