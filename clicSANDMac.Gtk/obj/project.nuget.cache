@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "2BtHMsYi6WRWEzfaXDpMEqQ+0zTJvM/I9UkUgVEfLneYHUtIYilQor/Zhc9ny23CsJkhLpz56hXVBOC6+lPsyQ==",
+  "success": true,
+  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac.Gtk/clicSANDMac.Gtk.csproj",
+  "expectedPackageFiles": [
+    "/Users/alexanderkell/.nuget/packages/atksharp/3.24.24.34/atksharp.3.24.24.34.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/cairosharp/3.24.24.34/cairosharp.3.24.24.34.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/eto.forms/2.5.11/eto.forms.2.5.11.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/eto.platform.gtk/2.5.11/eto.platform.gtk.2.5.11.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/gdksharp/3.24.24.34/gdksharp.3.24.24.34.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/giosharp/3.24.24.34/giosharp.3.24.24.34.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/glibsharp/3.24.24.34/glibsharp.3.24.24.34.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/gtksharp/3.24.24.34/gtksharp.3.24.24.34.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/pangosharp/3.24.24.34/pangosharp.3.24.24.34.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.permissions/5.0.0/system.security.permissions.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

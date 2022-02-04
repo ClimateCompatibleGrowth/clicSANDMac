@@ -1,0 +1,26 @@
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/Templates/CCG-SAND Interface v.12.xlsm
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/Templates/OSeMOSYS_code.txt
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/Templates/Results Database.accdb
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/Templates/ResultsTemplate.xlsx
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDMac.exe.config
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDMac.exe
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDMac.pdb
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/Eto.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/Eto.Mac64.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/MonoMac.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/System.ComponentModel.Annotations.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/System.Configuration.ConfigurationManager.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/System.Security.AccessControl.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/System.Security.Permissions.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/System.Security.Principal.Windows.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDLib.dll
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDLib.pdb
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.csproj.AssemblyReference.cache
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.exe.config
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.AssemblyInfoInputs.cache
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.AssemblyInfo.cs
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.csproj.CoreCompileInputs.cache
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.csproj.CopyComplete
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.exe
+/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac/obj/Debug/net48/clicSANDMac.pdb

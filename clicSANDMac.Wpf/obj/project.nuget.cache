@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "5bgYFU7rWCRaJwN1sPECsMtdKqaewFtaaZlQe6SZ79zjFYGo9dLXtERljbjz0C0iRst6ISyzxttYZJhsZbyiOw==",
+  "success": true,
+  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
+  "expectedPackageFiles": [
+    "/Users/alexanderkell/.nuget/packages/eto.forms/2.5.11/eto.forms.2.5.11.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/eto.platform.wpf/2.5.11/eto.platform.wpf.2.5.11.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/extended.wpf.toolkit/3.6.0/extended.wpf.toolkit.3.6.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.componentmodel.annotations/4.7.0/system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.accesscontrol/5.0.0/system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.permissions/5.0.0/system.security.permissions.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/system.security.principal.windows/5.0.0/system.security.principal.windows.5.0.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/windows7apicodepack-core/1.1.0/windows7apicodepack-core.1.1.0.nupkg.sha512",
+    "/Users/alexanderkell/.nuget/packages/windows7apicodepack-shell/1.1.0/windows7apicodepack-shell.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
