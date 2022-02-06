@@ -18,7 +18,7 @@
   <ItemGroup>
     <None Update="Templates\CCG-SAND Interface v.12.xlsm">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    </None>    
     <None Update="Templates\OSeMOSYS_code.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -27,6 +27,9 @@
     </None>
     <None Update="Templates\ResultsTemplate.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="converter\dist\python_converter">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
