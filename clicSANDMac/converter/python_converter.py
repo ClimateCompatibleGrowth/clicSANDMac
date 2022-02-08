@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     input = sys.argv[1]
     output_dir = sys.argv[2]
-    output_filename = input.split("/")[-1] + ".processed_results.txt"
+    output_filename = input.split("/")[-1] + ".processed_results"
 
     columns = [
         "index",
