@@ -20,6 +20,7 @@ namespace clicSANDLib
             string dataFileName = textBoxDataSource.Text;
             string lpFileName = textBoxDataSource.Text + ".lp";
             string resultsFileName = textBoxDataSource.Text + ".results.txt";
+            string processedResultsFileName = resultsFileName + ".processed_results.csv";
             logFileName = string.Format("{0}{1}.log.txt", textBoxDataSource.Text, DateTime.Now.ToString("yyyyMMddHHmmss"));
 
             textBoxOutput.Text = "";
@@ -29,6 +30,7 @@ namespace clicSANDLib
             textBoxOutput.Text += "Model file: " + textBoxModel.Text + "\r\n";
             textBoxOutput.Text += "GLPSOL Output file: " + lpFileName + "\r\n";
             textBoxOutput.Text += "Results file: " + resultsFileName + "\r\n";
+            textBoxOutput.Text += "Processed Results file: " + processedResultsFileName + "\r\n";
             textBoxOutput.Text += "Log file: " + logFileName + "\r\n";
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
