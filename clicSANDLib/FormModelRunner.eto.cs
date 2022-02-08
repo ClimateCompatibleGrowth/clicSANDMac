@@ -123,15 +123,6 @@ namespace clicSANDLib
             this.textBoxOutput.Size = new Size(811, 313);
             this.textBoxOutput.TabIndex = 7;
             // 
-            // // buttonOpenResults
-            // // 
-            // this.layout.Add(buttonOpenResults,211, 95);
-            // this.buttonOpenResults.ID = "buttonOpenResults";
-            // this.buttonOpenResults.Size = new Size(100, 23);
-            // this.buttonOpenResults.TabIndex = 10;
-            // this.buttonOpenResults.Text = "Open Log";
-            // //this.buttonOpenResults.UseVisualStyleBackColor = true;
-            // this.buttonOpenResults.Click += new System.EventHandler<System.EventArgs>(this.buttonOpenResults_Click);
             // 
             // numericRatio
             // 

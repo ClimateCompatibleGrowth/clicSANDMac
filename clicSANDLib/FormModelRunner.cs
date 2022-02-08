@@ -219,11 +219,6 @@ namespace clicSANDLib
             file.WriteLine(lines);
         }
 
-        protected void buttonOpenResults_Click(object sender, EventArgs e)
-        {
-            RunProcess(@"/usr/bin/open", " -a TextEdit " + logFileName);
-        }
-
         private void checkCBCRatio_CheckedChanged(object sender, EventArgs e)
         {
             numericRatio.Enabled = (bool)checkCBCRatio.Checked;
