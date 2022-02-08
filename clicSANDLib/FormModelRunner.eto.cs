@@ -53,7 +53,7 @@ namespace clicSANDLib
             // labelDataSource
             // 
             //this.labelDataSource.AutoSize = true;
-            this.layout.Add(labelDataSource,13, 13);
+            this.layout.Add(labelDataSource, 13, 13);
             this.labelDataSource.ID = "labelDataSource";
             this.labelDataSource.Size = new Size(118, 13);
             this.labelDataSource.TabIndex = 0;
@@ -61,7 +61,7 @@ namespace clicSANDLib
             // 
             // textBoxDataSource
             // 
-            this.layout.Add(textBoxDataSource,138, 13);
+            this.layout.Add(textBoxDataSource, 138, 13);
             this.textBoxDataSource.ID = "textBoxDataSource";
             this.textBoxDataSource.Size = new Size(651, 20);
             this.textBoxDataSource.TabIndex = 1;
@@ -79,7 +79,7 @@ namespace clicSANDLib
             // labelModel
             // 
             //this.labelModel.AutoSize = true;
-            this.layout.Add(labelModel,13, 43);
+            this.layout.Add(labelModel, 13, 43);
             this.labelModel.ID = "labelModel";
             this.labelModel.Size = new Size(46, 13);
             this.labelModel.TabIndex = 3;
@@ -88,7 +88,7 @@ namespace clicSANDLib
             // textBoxModel
             // 
             this.textBoxModel.TextColor = SystemColors.ControlText;
-            this.layout.Add(textBoxModel,138, 40);
+            this.layout.Add(textBoxModel, 138, 40);
             this.textBoxModel.ID = "textBoxModel";
             this.textBoxModel.Size = new Size(651, 20);
             this.textBoxModel.TabIndex = 4;
@@ -105,7 +105,7 @@ namespace clicSANDLib
             // 
             // buttonRun
             // 
-            this.layout.Add(buttonRun,105, 95);
+            this.layout.Add(buttonRun, 105, 95);
             this.buttonRun.ID = "buttonRun";
             this.buttonRun.Size = new Size(100, 23);
             this.buttonRun.TabIndex = 6;
@@ -115,7 +115,7 @@ namespace clicSANDLib
             // 
             // textBoxOutput
             // 
-            this.layout.Add(textBoxOutput,13, 124);
+            this.layout.Add(textBoxOutput, 13, 124);
             //this.textBoxOutput.MaxLength = 100000;
             //this.textBoxOutput.Multiline = true;
             this.textBoxOutput.ID = "textBoxOutput";
@@ -123,21 +123,21 @@ namespace clicSANDLib
             this.textBoxOutput.Size = new Size(811, 313);
             this.textBoxOutput.TabIndex = 7;
             // 
-            // buttonOpenResults
-            // 
-            this.layout.Add(buttonOpenResults,211, 95);
-            this.buttonOpenResults.ID = "buttonOpenResults";
-            this.buttonOpenResults.Size = new Size(100, 23);
-            this.buttonOpenResults.TabIndex = 10;
-            this.buttonOpenResults.Text = "Open Log";
-            //this.buttonOpenResults.UseVisualStyleBackColor = true;
-            this.buttonOpenResults.Click += new System.EventHandler<System.EventArgs>(this.buttonOpenResults_Click);
+            // // buttonOpenResults
+            // // 
+            // this.layout.Add(buttonOpenResults,211, 95);
+            // this.buttonOpenResults.ID = "buttonOpenResults";
+            // this.buttonOpenResults.Size = new Size(100, 23);
+            // this.buttonOpenResults.TabIndex = 10;
+            // this.buttonOpenResults.Text = "Open Log";
+            // //this.buttonOpenResults.UseVisualStyleBackColor = true;
+            // this.buttonOpenResults.Click += new System.EventHandler<System.EventArgs>(this.buttonOpenResults_Click);
             // 
             // numericRatio
             // 
             this.numericRatio.DecimalPlaces = 2;
             this.numericRatio.Increment = 0.01;
-            this.layout.Add(numericRatio,108, 68);
+            this.layout.Add(numericRatio, 108, 68);
             this.numericRatio.MinValue = 0.0;
             this.numericRatio.MaxValue = 1.0;
             this.numericRatio.ID = "numericRatio";
@@ -150,7 +150,7 @@ namespace clicSANDLib
             //this.checkCBCRatio.AutoSize = true;
             this.checkCBCRatio.Checked = true;
             //this.checkCBCRatio.CheckState = CheckState.Checked;
-            this.layout.Add(checkCBCRatio,13, 70);
+            this.layout.Add(checkCBCRatio, 13, 70);
             this.checkCBCRatio.ID = "checkCBCRatio";
             this.checkCBCRatio.Size = new Size(81, 17);
             this.checkCBCRatio.TabIndex = 14;
@@ -160,7 +160,7 @@ namespace clicSANDLib
             // 
             // buttonSaveTemplates
             // 
-            this.layout.Add(buttonSaveTemplates,317, 95);
+            this.layout.Add(buttonSaveTemplates, 211, 95);
             this.buttonSaveTemplates.ID = "buttonSaveTemplates";
             this.buttonSaveTemplates.Size = new Size(120, 23);
             this.buttonSaveTemplates.TabIndex = 15;
