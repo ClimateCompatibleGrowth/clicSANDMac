@@ -602,11 +602,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac/clicSANDMac.csproj",
+      "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/clicSANDMac.csproj",
       "projectName": "clicSANDMac",
-      "projectPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac/clicSANDMac.csproj",
+      "projectPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/clicSANDMac.csproj",
       "packagesPath": "/Users/alexanderkell/.nuget/packages/",
-      "outputPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac/obj/",
+      "outputPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alexanderkell/.config/NuGet/NuGet.Config"
@@ -621,8 +621,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj": {
-              "projectPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj"
+            "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj": {
+              "projectPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj"
             }
           }
         }
