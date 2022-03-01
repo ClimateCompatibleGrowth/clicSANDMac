@@ -21,4 +21,4 @@ Open the Launchpad, and open clicSANDMac
 The user interface for clicSANDMac should be displayed, provided the Mono framework has been installed.
 
 ## License
-This software is licensed under the MIT License, details in licence
+This software is licensed under the MIT License, details in license
