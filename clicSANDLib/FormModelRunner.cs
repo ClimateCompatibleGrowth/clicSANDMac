@@ -20,15 +20,17 @@ namespace clicSANDLib
             string dataFileName = textBoxDataSource.Text;
             string lpFileName = textBoxDataSource.Text + ".lp";
             string resultsFileName = textBoxDataSource.Text + ".results.txt";
+            string processedResultsFileName = resultsFileName + ".processed_results.csv";
             logFileName = string.Format("{0}{1}.log.txt", textBoxDataSource.Text, DateTime.Now.ToString("yyyyMMddHHmmss"));
 
             textBoxOutput.Text = "";
 
             textBoxOutput.Text += new string('-', 150) + "\r\n";
             textBoxOutput.Text += "Data file: " + dataFileName + "\r\n";
-            textBoxOutput.Text += "Model file: " + textBoxModel.Text+ "\r\n";
+            textBoxOutput.Text += "Model file: " + textBoxModel.Text + "\r\n";
             textBoxOutput.Text += "GLPSOL Output file: " + lpFileName + "\r\n";
-            textBoxOutput.Text += "Results file: " + resultsFileName+ "\r\n";
+            textBoxOutput.Text += "Results file: " + resultsFileName + "\r\n";
+            textBoxOutput.Text += "Processed Results file: " + processedResultsFileName + "\r\n";
             textBoxOutput.Text += "Log file: " + logFileName + "\r\n";
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
@@ -47,6 +49,15 @@ namespace clicSANDLib
             {
                 MessageBox.Show(exc.Message, "Error Running Model");
             }
+            try
+            {
+                textBoxOutput.Text += "Converting results for visualisation";
+                ConvertResults(resultsFileName, resultsFileName);
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to convert results: " + exc.Message + "\r\n";
+            }
             finally
             {
                 //TODO Cursor.Current = Cursors.Default;
@@ -61,6 +72,8 @@ namespace clicSANDLib
                 }
             }
         }
+
+
 
         //private bool ExtractDataFromXLS(string xlsFileName, string dataFileName)
         //{
@@ -81,6 +94,33 @@ namespace clicSANDLib
         //    }
         //    return true;
         //}
+
+        private void ConvertResults(string input, string output_dir)
+        {
+            // Use ProcessStartInfo class
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            // startInfo.CreateNoWindow = false;
+            startInfo.RedirectStandardOutput = true;
+            startInfo.UseShellExecute = false;
+            string path = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), @"converter/dist/python_converter");
+            startInfo.FileName = path;
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            string input_path = Path.GetDirectoryName(input);
+            startInfo.Arguments = input + " " + input_path;
+
+            try
+            {
+                using (Process exeProcess = Process.Start(startInfo))
+                {
+                    exeProcess.WaitForExit();
+                }
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to run python converter: " + exc.Message + "\r\n";
+            }
+        }
+
         private bool RunGLPSOL(string dataFileName, string modelFileName, string lpFileName)
         {
             return RunProcess(String.Format(@"{0}/glpsol", ConfigurationManager.AppSettings["glpsolLocation"]), string.Format("--check -m \"{0}\" -d \"{1}\" --wlp \"{2}\"", modelFileName, dataFileName, lpFileName));
@@ -117,8 +157,8 @@ namespace clicSANDLib
 
                 compiler.OutputDataReceived += new DataReceivedEventHandler((sender, e) =>
                 {
-                // Prepend line numbers to each line of the output.
-                if (!String.IsNullOrEmpty(e.Data))
+                    // Prepend line numbers to each line of the output.
+                    if (!String.IsNullOrEmpty(e.Data))
                     {
                         textBoxOutput.Text += e.Data;
                     }
@@ -181,11 +221,6 @@ namespace clicSANDLib
             file.WriteLine(lines);
         }
 
-        protected void buttonOpenResults_Click(object sender, EventArgs e)
-        {
-            RunProcess(@"/usr/bin/open", " -a TextEdit " + logFileName);
-        }
-
         private void checkCBCRatio_CheckedChanged(object sender, EventArgs e)
         {
             numericRatio.Enabled = (bool)checkCBCRatio.Checked;
@@ -200,7 +235,7 @@ namespace clicSANDLib
 
             var location = new Uri(System.Reflection.Assembly.GetEntryAssembly().GetName().CodeBase);
             DirectoryInfo runningFolder = new FileInfo(location.AbsolutePath).Directory;
-            
+
             if (result.Equals(DialogResult.Ok))
             {
                 try
@@ -219,3 +254,4 @@ namespace clicSANDLib
         }
     }
 }
+
