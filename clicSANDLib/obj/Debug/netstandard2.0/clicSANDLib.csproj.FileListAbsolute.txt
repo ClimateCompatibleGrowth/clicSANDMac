@@ -18,3 +18,12 @@
 /Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.csproj.CoreCompileInputs.cache
 /Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.dll
 /Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.pdb
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/bin/Debug/netstandard2.0/clicSANDLib.deps.json
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/bin/Debug/netstandard2.0/clicSANDLib.dll
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/bin/Debug/netstandard2.0/clicSANDLib.pdb
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.AssemblyInfoInputs.cache
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.AssemblyInfo.cs
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.csproj.CoreCompileInputs.cache
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.dll
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/Debug/netstandard2.0/clicSANDLib.pdb

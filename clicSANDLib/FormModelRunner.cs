@@ -21,6 +21,7 @@ namespace clicSANDLib
             string lpFileName = textBoxDataSource.Text + ".lp";
             string resultsFileName = textBoxDataSource.Text + ".results.txt";
             string processedResultsFileName = resultsFileName + ".processed_results.csv";
+            string resFile = resultsFileName + ".res_data.txt";
             logFileName = string.Format("{0}{1}.log.txt", textBoxDataSource.Text, DateTime.Now.ToString("yyyyMMddHHmmss"));
 
             textBoxOutput.Text = "";
@@ -31,6 +32,7 @@ namespace clicSANDLib
             textBoxOutput.Text += "GLPSOL Output file: " + lpFileName + "\r\n";
             textBoxOutput.Text += "Results file: " + resultsFileName + "\r\n";
             textBoxOutput.Text += "Processed Results file: " + processedResultsFileName + "\r\n";
+            textBoxOutput.Text += "RES data file: " + resFile + "\r\n";
             textBoxOutput.Text += "Log file: " + logFileName + "\r\n";
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
@@ -58,6 +60,15 @@ namespace clicSANDLib
             {
                 textBoxOutput.Text += "Unable to convert results: " + exc.Message + "\r\n";
             }
+            try
+            {
+                textBoxOutput.Text += "Converting files for RES visualisation";
+                CreateRESOutput(dataFileName, resFile);
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to convert RES result: " + exc.Message + "\r\n";
+            }
             finally
             {
                 //TODO Cursor.Current = Cursors.Default;
@@ -65,6 +76,7 @@ namespace clicSANDLib
                 try
                 {
                     SaveLog(logFileName, textBoxOutput.Text);
+
                 }
                 catch (Exception exc)
                 {
@@ -120,6 +132,33 @@ namespace clicSANDLib
                 textBoxOutput.Text += "Unable to run python converter: " + exc.Message + "\r\n";
             }
         }
+
+        private void CreateRESOutput(string input, string output_dir)
+        {
+            // Use ProcessStartInfo class
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            // startInfo.CreateNoWindow = false;
+            startInfo.RedirectStandardOutput = true;
+            startInfo.UseShellExecute = false;
+            string path = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), @"RES/sand_filter_v2");
+            startInfo.FileName = path;
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            string input_path = Path.GetDirectoryName(input);
+            startInfo.Arguments = input + " " + output_dir;
+
+            try
+            {
+                using (Process exeProcess = Process.Start(startInfo))
+                {
+                    exeProcess.WaitForExit();
+                }
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to run RES converter: " + exc.Message + "\r\n";
+            }
+        }
+
 
         private bool RunGLPSOL(string dataFileName, string modelFileName, string lpFileName)
         {

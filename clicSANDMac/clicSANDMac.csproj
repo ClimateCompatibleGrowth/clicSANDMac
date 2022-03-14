@@ -28,6 +28,9 @@
     <None Update="converter\dist\python_converter">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="clicSANDMac/RES/sand_filter_v2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\clicSANDLib\clicSANDLib.csproj" />
