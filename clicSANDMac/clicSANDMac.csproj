@@ -28,7 +28,7 @@
     <None Update="converter\dist\python_converter">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="clicSANDMac/RES/sand_filter_v2">
+    <None Update="RES\sand_filter_v2">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

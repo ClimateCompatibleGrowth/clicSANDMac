@@ -54,6 +54,7 @@
 /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/bin/Debug/net48/Templates/OSeMOSYS_code.txt
 /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/bin/Debug/net48/Templates/ResultsTemplate.xlsx
 /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/bin/Debug/net48/converter/dist/python_converter
+/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/bin/Debug/net48/RES/sand_filter_v2
 /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDMac.exe.config
 /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDMac.exe
 /Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/bin/Debug/net48/clicSANDMac.pdb

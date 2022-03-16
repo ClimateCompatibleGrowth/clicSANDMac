@@ -37,7 +37,15 @@ namespace clicSANDLib
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
             //TODO Cursor.Current = Cursors.WaitCursor;
-
+            try
+            {
+                textBoxOutput.Text += "Converting files for RES visualisation";
+                CreateRESOutput(dataFileName, resFile);
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to convert RES result: " + exc.Message + "\r\n";
+            }
             try
             {
                 bool result = false;
@@ -59,15 +67,6 @@ namespace clicSANDLib
             catch (Exception exc)
             {
                 textBoxOutput.Text += "Unable to convert results: " + exc.Message + "\r\n";
-            }
-            try
-            {
-                textBoxOutput.Text += "Converting files for RES visualisation";
-                CreateRESOutput(dataFileName, resFile);
-            }
-            catch (Exception exc)
-            {
-                textBoxOutput.Text += "Unable to convert RES result: " + exc.Message + "\r\n";
             }
             finally
             {
