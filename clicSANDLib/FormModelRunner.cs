@@ -21,7 +21,6 @@ namespace clicSANDLib
             string lpFileName = textBoxDataSource.Text + ".lp";
             string resultsFileName = textBoxDataSource.Text + ".results.txt";
             string processedResultsFileName = resultsFileName + ".processed_results.csv";
-            string resFile = resultsFileName + ".res_data.txt";
             logFileName = string.Format("{0}{1}.log.txt", textBoxDataSource.Text, DateTime.Now.ToString("yyyyMMddHHmmss"));
 
             textBoxOutput.Text = "";
@@ -32,20 +31,10 @@ namespace clicSANDLib
             textBoxOutput.Text += "GLPSOL Output file: " + lpFileName + "\r\n";
             textBoxOutput.Text += "Results file: " + resultsFileName + "\r\n";
             textBoxOutput.Text += "Processed Results file: " + processedResultsFileName + "\r\n";
-            textBoxOutput.Text += "RES data file: " + resFile + "\r\n";
             textBoxOutput.Text += "Log file: " + logFileName + "\r\n";
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
             //TODO Cursor.Current = Cursors.WaitCursor;
-            try
-            {
-                textBoxOutput.Text += "Converting files for RES visualisation";
-                CreateRESOutput(dataFileName, resFile);
-            }
-            catch (Exception exc)
-            {
-                textBoxOutput.Text += "Unable to convert RES result: " + exc.Message + "\r\n";
-            }
             try
             {
                 bool result = false;
@@ -63,6 +52,7 @@ namespace clicSANDLib
             {
                 textBoxOutput.Text += "Converting results for visualisation";
                 ConvertResults(resultsFileName, resultsFileName);
+                textBoxOutput.Text += "Converted results for visualisation";
             }
             catch (Exception exc)
             {
@@ -81,6 +71,31 @@ namespace clicSANDLib
                 {
                     textBoxOutput.Text += "Unable to save log: " + exc.Message + "\r\n";
                 }
+            }
+        }
+
+        private void buttonCloud_Click(object sender, EventArgs e)
+        {
+            string dataFileName = textBoxDataSource.Text;
+            string cloudFile = dataFileName + ".cloud_data.txt";
+            logFileName = string.Format("{0}{1}.log.txt", textBoxDataSource.Text, DateTime.Now.ToString("yyyyMMddHHmmss"));
+
+            textBoxOutput.Text = "";
+
+            textBoxOutput.Text += new string('-', 150) + "\r\n";
+            textBoxOutput.Text += "Data file: " + dataFileName + "\r\n";
+            textBoxOutput.Text += "RES data file: " + cloudFile + "\r\n";
+            textBoxOutput.Text += new string('-', 150) + "\r\n";
+
+            // TODO Cursor.Current = Cursors.WaitCursor;
+            try
+            {
+                textBoxOutput.Text += "Converting files for OSeMOSYS Cloud data input \r\n";
+                CreateCloudInput(dataFileName, cloudFile);
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to generate OSeMOSYS Cloud input data: " + exc.Message + "\r\n";
             }
         }
 
@@ -117,7 +132,7 @@ namespace clicSANDLib
             startInfo.FileName = path;
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             string input_path = Path.GetDirectoryName(input);
-            startInfo.Arguments = input + " " + input_path;
+            startInfo.Arguments = "\"" + input + "\"" + " " + "\"" + input_path + "\"";
 
             try
             {
@@ -132,7 +147,7 @@ namespace clicSANDLib
             }
         }
 
-        private void CreateRESOutput(string input, string output_dir)
+        private void CreateCloudInput(string input, string output_dir)
         {
             // Use ProcessStartInfo class
             ProcessStartInfo startInfo = new ProcessStartInfo();
@@ -154,7 +169,7 @@ namespace clicSANDLib
             }
             catch (Exception exc)
             {
-                textBoxOutput.Text += "Unable to run RES converter: " + exc.Message + "\r\n";
+                textBoxOutput.Text += "Unable to create cloud input: " + exc.Message + "\r\n";
             }
         }
 
