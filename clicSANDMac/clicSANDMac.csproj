@@ -22,7 +22,7 @@
     <None Update="Templates\OSeMOSYS_code.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Templates\ResultsTemplate.xlsx">
+    <None Update="Templates\results_template.xlsx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="converter\dist\python_converter">

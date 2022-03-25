@@ -1,7 +1,7 @@
 import os, sys
-import pandas as pd
 from collections import defaultdict
 import re
+
 
 def main(datafile_in, datafile_out):
 
@@ -14,36 +14,40 @@ def main(datafile_in, datafile_out):
     index_tag = []
     year_tag = []
 
-    with open(datafile_in, 'r') as file_in:
+    with open(datafile_in, "r") as file_in:
         for line in file_in:
-            line = line.strip('\t ').replace('\t', ' ')
-            line = re.sub(' +', ' ', line)
-            line = line.replace(' \n', '\n')
+            line = line.strip("\t ").replace("\t", " ")
+            line = re.sub(" +", " ", line)
+            line = line.replace(" \n", "\n")
 
-            if line.startswith('set YEAR'):
-                start_year = line.split(':=')[1].split(' ')[1]
+            if line.startswith("set YEAR"):
+                start_year = line.split(":=")[1].split(" ")[1]
                 # print(start_year)
 
-            if line.startswith('param'):
+            if line.startswith("param"):
                 parsing = True
 
-                if line.startswith('param REMinProductionTarget'):
-                    line = line.replace(':', ':=')
+                if line.startswith("param REMinProductionTarget"):
+                    line = line.replace(":", ":=")
 
             if parsing:
                 line_values = []
-                if line.startswith('param'):
-                    param_current = line.split(' ')[1]
-                    line_elements = list(line.split(' '))
+                if line.startswith("param"):
+                    param_current = line.split(" ")[1]
+                    line_elements = list(line.split(" "))
                     line_elements = [i.strip("\n:=") for i in line_elements]
                     lines.append(line)
 
-                    if 'default' in line_elements:
-                        default_index = line_elements.index('default')  # Find position of 'default'
-                        default_value = line_elements[default_index+1]  # Extract default value
+                    if "default" in line_elements:
+                        default_index = line_elements.index(
+                            "default"
+                        )  # Find position of 'default'
+                        default_value = line_elements[
+                            default_index + 1
+                        ]  # Extract default value
                         # print(param_current, default_value)
 
-                elif line.startswith('['):
+                elif line.startswith("["):
                     index_line = line
                     param_reset = True
                     index_tag = True
@@ -55,7 +59,7 @@ def main(datafile_in, datafile_out):
                     year_tag = True
 
                 else:
-                    line_values = list(set(line.rstrip('\n').split(' ')[1:-1]))
+                    line_values = list(set(line.rstrip("\n").split(" ")[1:-1]))
 
                     if line_values != list(default_value):
                         if line_values != []:
@@ -73,7 +77,7 @@ def main(datafile_in, datafile_out):
                         if not param_reset:
                             lines.append(param_line)
                             param_line = []
-            if line.startswith(';'):
+            if line.startswith(";"):
                 lines.append(line)
                 # print(param_current, index_tag, year_tag)
                 parsing = False
@@ -82,11 +86,11 @@ def main(datafile_in, datafile_out):
             elif not parsing:
                 lines.append(line)
 
-    with open(datafile_out, 'w') as file_out:
+    with open(datafile_out, "w") as file_out:
         file_out.writelines(lines)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     if len(sys.argv) != 3:
         msg = "Usage: python {} <infile> <outfile>"

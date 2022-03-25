@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj": {}
+    "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj": {}
   },
   "projects": {
-    "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj": {
+    "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj",
+        "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj",
         "projectName": "clicSANDLib",
-        "projectPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj",
+        "projectPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj",
         "packagesPath": "/Users/alexanderkell/.nuget/packages/",
-        "outputPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/obj/",
+        "outputPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alexanderkell/.config/NuGet/NuGet.Config"
@@ -63,18 +63,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.405/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj": {
+    "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
+        "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
         "projectName": "clicSANDMac.Wpf",
-        "projectPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
+        "projectPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac.Wpf/clicSANDMac.Wpf.csproj",
         "packagesPath": "/Users/alexanderkell/.nuget/packages/",
-        "outputPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDMac.Wpf/obj/",
+        "outputPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac.Wpf/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/alexanderkell/.config/NuGet/NuGet.Config"
@@ -89,8 +89,8 @@
           "net462": {
             "targetAlias": "net462",
             "projectReferences": {
-              "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj": {
-                "projectPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj"
+              "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj": {
+                "projectPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj"
               }
             }
           }
@@ -110,7 +110,7 @@
               "version": "[2.5.11, )"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.406/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.405/RuntimeIdentifierGraph.json"
         }
       }
     }
