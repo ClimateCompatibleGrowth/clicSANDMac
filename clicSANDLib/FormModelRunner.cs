@@ -35,7 +35,6 @@ namespace clicSANDLib
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
             //TODO Cursor.Current = Cursors.WaitCursor;
-
             try
             {
                 bool result = false;
@@ -53,6 +52,7 @@ namespace clicSANDLib
             {
                 textBoxOutput.Text += "Converting results for visualisation";
                 ConvertResults(resultsFileName, resultsFileName);
+                textBoxOutput.Text += "Converted results for visualisation";
             }
             catch (Exception exc)
             {
@@ -65,11 +65,37 @@ namespace clicSANDLib
                 try
                 {
                     SaveLog(logFileName, textBoxOutput.Text);
+
                 }
                 catch (Exception exc)
                 {
                     textBoxOutput.Text += "Unable to save log: " + exc.Message + "\r\n";
                 }
+            }
+        }
+
+        private void buttonCloud_Click(object sender, EventArgs e)
+        {
+            string dataFileName = textBoxDataSource.Text;
+            string cloudFile = dataFileName.Remove(dataFileName.Length - 4) + ".cloud_data.txt";
+            logFileName = string.Format("{0}{1}.log.txt", textBoxDataSource.Text, DateTime.Now.ToString("yyyyMMddHHmmss"));
+
+            textBoxOutput.Text = "";
+
+            textBoxOutput.Text += new string('-', 150) + "\r\n";
+            textBoxOutput.Text += "Data file: " + dataFileName + "\r\n";
+            textBoxOutput.Text += "Cloud data file: " + cloudFile + "\r\n";
+            textBoxOutput.Text += new string('-', 150) + "\r\n";
+
+            // TODO Cursor.Current = Cursors.WaitCursor;
+            try
+            {
+                textBoxOutput.Text += "Converting files for OSeMOSYS Cloud data input \r\n";
+                CreateCloudInput(dataFileName, cloudFile);
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to generate OSeMOSYS Cloud input data: " + exc.Message + "\r\n";
             }
         }
 
@@ -106,7 +132,7 @@ namespace clicSANDLib
             startInfo.FileName = path;
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             string input_path = Path.GetDirectoryName(input);
-            startInfo.Arguments = input + " " + input_path;
+            startInfo.Arguments = "\"" + input + "\"" + " " + "\"" + input_path + "\"";
 
             try
             {
@@ -120,6 +146,32 @@ namespace clicSANDLib
                 textBoxOutput.Text += "Unable to run python converter: " + exc.Message + "\r\n";
             }
         }
+
+        private void CreateCloudInput(string input, string output_dir)
+        {
+            // Use ProcessStartInfo class
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            // startInfo.CreateNoWindow = false;
+            startInfo.RedirectStandardOutput = true;
+            startInfo.UseShellExecute = false;
+            string path = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), @"Cloud/sand_filter_v2");
+            startInfo.FileName = path;
+            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            startInfo.Arguments = "\"" + input + "\"" + " " + "\"" + output_dir + "\"";
+
+            try
+            {
+                using (Process exeProcess = Process.Start(startInfo))
+                {
+                    exeProcess.WaitForExit();
+                }
+            }
+            catch (Exception exc)
+            {
+                textBoxOutput.Text += "Unable to create cloud input: " + exc.Message + "\r\n";
+            }
+        }
+
 
         private bool RunGLPSOL(string dataFileName, string modelFileName, string lpFileName)
         {

@@ -40,6 +40,7 @@ namespace clicSANDLib
             this.labelModel = new Label();
             this.textBoxModel = new TextBox();
             this.buttonRun = new Button();
+            this.buttonCloud = new Button();
             this.textBoxOutput = new TextArea();
             this.buttonOpenXLS = new Button();
             this.buttonOpenModel = new Button();
@@ -159,6 +160,16 @@ namespace clicSANDLib
             //this.buttonSaveTemplates.UseVisualStyleBackColor = true;
             this.buttonSaveTemplates.Click += new System.EventHandler<System.EventArgs>(this.buttonSaveTemplates_Click);
             // 
+            // buttonRun
+            // 
+            this.layout.Add(buttonCloud, 336, 95);
+            this.buttonCloud.ID = "buttonCloud";
+            this.buttonCloud.Size = new Size(250, 23);
+            this.buttonCloud.TabIndex = 16;
+            this.buttonCloud.Text = "Generate OSeMOSYS Cloud Input Data";
+            //this.buttonCloud.UseVisualStyleBackColor = true;
+            this.buttonCloud.Click += new System.EventHandler<System.EventArgs>(this.buttonCloud_Click);
+            // 
             // FormModelRunner
             // 
             //this.AutoScaleDimensions = new SizeF(6F, 13F);
@@ -206,6 +217,7 @@ namespace clicSANDLib
         private NumericUpDown numericRatio;
         private CheckBox checkCBCRatio;
         private Button buttonSaveTemplates;
+        private Button buttonCloud;
 
         private PixelLayout layout;
     }

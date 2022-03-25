@@ -767,11 +767,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj",
+      "projectUniqueName": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj",
       "projectName": "clicSANDLib",
-      "projectPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/clicSANDLib.csproj",
+      "projectPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/clicSANDLib.csproj",
       "packagesPath": "/Users/alexanderkell/.nuget/packages/",
-      "outputPath": "/Users/alexanderkell/GitHub/SGI/1-cliSANDMac/clicSANDLib/obj/",
+      "outputPath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDLib/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/alexanderkell/.config/NuGet/NuGet.Config"
@@ -823,7 +823,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.405/RuntimeIdentifierGraph.json"
       }
     }
   }
