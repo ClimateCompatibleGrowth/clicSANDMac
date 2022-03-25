@@ -157,8 +157,7 @@ namespace clicSANDLib
             string path = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), @"RES/sand_filter_v2");
             startInfo.FileName = path;
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            string input_path = Path.GetDirectoryName(input);
-            startInfo.Arguments = input + " " + output_dir;
+            startInfo.Arguments = "\"" + input + "\"" + " " + "\"" + output_dir + "\"";
 
             try
             {
