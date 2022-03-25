@@ -84,7 +84,7 @@ namespace clicSANDLib
 
             textBoxOutput.Text += new string('-', 150) + "\r\n";
             textBoxOutput.Text += "Data file: " + dataFileName + "\r\n";
-            textBoxOutput.Text += "RES data file: " + cloudFile + "\r\n";
+            textBoxOutput.Text += "Cloud data file: " + cloudFile + "\r\n";
             textBoxOutput.Text += new string('-', 150) + "\r\n";
 
             // TODO Cursor.Current = Cursors.WaitCursor;
@@ -154,7 +154,7 @@ namespace clicSANDLib
             // startInfo.CreateNoWindow = false;
             startInfo.RedirectStandardOutput = true;
             startInfo.UseShellExecute = false;
-            string path = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), @"RES/sand_filter_v2");
+            string path = Path.Combine(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location), @"Cloud/sand_filter_v2");
             startInfo.FileName = path;
             startInfo.WindowStyle = ProcessWindowStyle.Hidden;
             startInfo.Arguments = "\"" + input + "\"" + " " + "\"" + output_dir + "\"";
