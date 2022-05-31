@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vSy8UlDSp580/C3fwZZh5ve2Mcy0vK+m39wJlY9WCkWNlfD00/N+chXPtNmcXosVsGvuBMtYvZlQC1iTRoUHpg==",
+  "dgSpecHash": "WqQ5tCAXswxVxT9LkL4ixPGZVv2gcspiysczQwLRApO9o5Htdn87GMNWq0qfhrHrDpQLaiaDybsqLJX2Kc7bug==",
   "success": true,
-  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac/clicSANDMac.csproj",
+  "projectFilePath": "/Users/alexanderkell/GitHub/6-osemosys/clicSANDMac/clicSANDMac/clicSANDMac.csproj",
   "expectedPackageFiles": [
     "/Users/alexanderkell/.nuget/packages/eto.forms/2.5.11/eto.forms.2.5.11.nupkg.sha512",
     "/Users/alexanderkell/.nuget/packages/eto.platform.mac64/2.5.11/eto.platform.mac64.2.5.11.nupkg.sha512",

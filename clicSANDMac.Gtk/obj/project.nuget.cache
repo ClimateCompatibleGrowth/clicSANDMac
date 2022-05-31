@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RhVKAVC16cTWyppRRrEqcsGTQFh1KGyUcvphn1hMHGYObsNKcgXBtQRPjnB/c3RLGnmnzlTqdg5eAERGNzgOWw==",
+  "dgSpecHash": "5qxPrgn5Xaki3OUflUW5NXF3b4H175EDO6w3DGizQtbfgZNRmnrlCHTRMyfWuuZOI01ahxFCGilxwjP0RCwRVw==",
   "success": true,
-  "projectFilePath": "/Users/alexanderkell/GitHub/SGI/5-clicSANDMac/clicSANDMac.Gtk/clicSANDMac.Gtk.csproj",
+  "projectFilePath": "/Users/alexanderkell/GitHub/6-osemosys/clicSANDMac/clicSANDMac.Gtk/clicSANDMac.Gtk.csproj",
   "expectedPackageFiles": [
     "/Users/alexanderkell/.nuget/packages/atksharp/3.24.24.34/atksharp.3.24.24.34.nupkg.sha512",
     "/Users/alexanderkell/.nuget/packages/cairosharp/3.24.24.34/cairosharp.3.24.24.34.nupkg.sha512",
