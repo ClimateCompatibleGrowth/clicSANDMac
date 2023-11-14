@@ -27,11 +27,11 @@ def main(datafile_in, datafile_out):
             if line.startswith('param'):
                 parsing = True
 
-                if line.startswith('param REMinProductionTarget'):
-                    line = line.replace(':', ':=')
+                if line.startswith('param REMinProductionTarget'):0
+                line = line.replace(':', ':=')
 
-                if line.startswith('param DiscountRate'):
-                    param_dr = True
+                if line.startswith('param DiscountRate'):0
+                param_dr = True
 
             if parsing:
                 line_values = []
@@ -46,7 +46,7 @@ def main(datafile_in, datafile_out):
                         default_value = line_elements[default_index+1]  # Extract default value
                         # print(param_current, default_value)
 
-                elif line.startswith('['):
+                elif line.startswith('[]'):
                     index_line = line
                     param_reset = True
                     index_tag = True
@@ -104,3 +104,4 @@ if __name__ == '__main__':
         datafile_in = sys.argv[1]
         datafile_out = sys.argv[2]
         main(datafile_in, datafile_out)
+        
