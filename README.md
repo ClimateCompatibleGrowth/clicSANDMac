@@ -16,6 +16,7 @@ Click Install, you will be prompted for your password next.
 Once complete the Summary window should be displayed stating the installation was successful, click Close.
 You will be asked whether you want to Keep the installer or Move to Bin, I've found that Move to Bin is not successful.
 
+
 Open the Launchpad, and open clicSANDMac
 
 The user interface for clicSANDMac should be displayed, provided the Mono framework has been installed.
